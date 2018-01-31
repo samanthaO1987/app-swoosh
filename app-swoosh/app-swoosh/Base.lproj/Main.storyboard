@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +90,7 @@
                             <constraint firstItem="eVa-My-L8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vMp-f4-1fU"/>
                             <constraint firstItem="RXF-fM-M0G" firstAttribute="top" secondItem="lpX-sF-moZ" secondAttribute="bottom" constant="85" id="xl9-N6-uSu"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="G5E-nq-VXM"/>
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="eVa-My-L8O" id="WRt-gG-zYX"/>
@@ -99,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="31.875" y="32.74647887323944"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="1fA-ge-9Ax">
             <objects>
-                <viewController id="cxc-cH-Nou" sceneMemberID="viewController">
+                <viewController id="cxc-cH-Nou" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sMP-kr-V5o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,6 +205,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="NP1-hD-cXY" secondAttribute="trailing" id="trX-h6-Pqo"/>
                             <constraint firstItem="jrP-2w-29s" firstAttribute="trailing" secondItem="sMP-kr-V5o" secondAttribute="trailingMargin" id="yVN-pu-CEd"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="1tZ-Zq-eFG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCd-SE-Xi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="780" y="32.833583208395808"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="Xl1-rd-cQl">
             <objects>
-                <viewController id="u00-1v-8aZ" sceneMemberID="viewController">
+                <viewController id="u00-1v-8aZ" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dL1-Jb-jxy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +299,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dqZ-Ha-13k" secondAttribute="trailing" id="ojM-ap-aU3"/>
                             <constraint firstItem="GOT-bG-wiz" firstAttribute="top" secondItem="dL1-Jb-jxy" secondAttribute="topMargin" constant="20" id="yPJ-pQ-RAQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="S2q-bD-Yhg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k51-aZ-3jZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
